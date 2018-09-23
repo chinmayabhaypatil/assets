@@ -1,4 +1,7 @@
-<?php session_start(); ?>
+<?php session_start(); 
+if(!empty($_SESSION["email"]))
+{
+?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -98,15 +101,8 @@
 							}
 							echo '<span class="dashnamesize ">Welcome, '.$name.'</span>';
 						}
-					?>
+					
 
-			</header> 
-
-<?php
-//$_SESSION["email"]=$_POST["email"];
-//$_SESSION["pass"]=$_POST["pass"];
-if(!empty($_SESSION["email"]))
-{
 	$conn = mysqli_connect($servername, $username, $password,$db);
 	$sql = "SELECT * FROM role WHERE email='$email'";
 	$result = mysqli_query($conn,$sql);
@@ -124,9 +120,9 @@ if(!empty($_SESSION["email"]))
 		<div class="topnav">
 
 			<a href="#dashboard.php" style="padding-left: 28px; padding-right: 25px;"><b>Home</b></a>
-			<a href="#yourseat"><b>Request Asset</b></a>
-			<a href="#bookseat.php"><b>Your Asset</b></a>
-			<a href="#logout.php" style="margin-left: 870px;"><b>Sign Out</b></a>
+			<a href="#requestasset"><b>Request Asset</b></a>
+			<a href="#yourasset.php"><b>Your Asset</b></a>
+			<a href="logout.php" style="margin-left: 870px;"><b>Sign Out</b></a>
 
 		</div>
 		<?php
@@ -138,8 +134,8 @@ if(!empty($_SESSION["email"]))
 
 			<a href="#dashboard.php" style="padding-left: 28px; padding-right: 25px;"><b>Home</b></a>
 			<!--<a href="#yourseat"><b>Your Seats</b></a>-->
-			<a href="#bookseat.php"><b>View Pending Requests</b></a>
-			<a href="#logout.php" style="margin-left: 870px;"><b>Sign Out</b></a>
+			<a href="#pending.php"><b>View Pending Requests</b></a>
+			<a href="logout.php" style="margin-left: 870px;"><b>Sign Out</b></a>
 
 		</div>
 		<?php
@@ -152,12 +148,16 @@ if(!empty($_SESSION["email"]))
 			<a href="#dashboard.php" style="padding-left: 28px; padding-right: 25px;"><b>Home</b></a>
 			<!--<a href="#yourseat"><b>Your Seats</b></a>-->
 			<a href="#bookseat.php"><b>Send Orders</b></a>
-			<a href="#logout.php" style="margin-left: 870px;"><b>Sign Out</b></a>
+			<a href="logout.php" style="margin-left: 870px;"><b>Sign Out</b></a>
 
 		</div>
 		<?php
 	}
 
+}
+else
+{
+	echo "not logged in";
 }
 ?>
 

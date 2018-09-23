@@ -1,0 +1,125 @@
+body
+{
+	color:#ffffff;
+	font-family: Cursive;
+	font-size: 15px;
+	background-image: url("books2.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.back
+{
+	background:rgba(255,255,255,0.5);
+	color: #0340FD;
+	padding-left:60px;
+	width: 35%;
+	margin-left: 440px;
+	padding-bottom: 5px;
+}
+.button
+{
+	padding: 12px 20px;
+	margin: 8px 0;
+	display: inline-block;
+	border: 2px solid #96989D;
+    border-radius: 6px;
+    box-sizing: border-box;
+    font-size: 15px;
+}
+.btn:hover
+{
+	background-color: #737373;
+	color: #ffffff;
+	cursor: pointer;
+}
+.size
+{
+	font-size: 20px;
+}
+input[type=text], select 
+{
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 2px solid #96989D;
+    border-radius: 6px;
+    box-sizing: border-box;
+    font-size: 15px;
+}
+
+input[type=Password], select 
+{
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 2px solid #96989D;
+    border-radius: 6px;
+    box-sizing: border-box;
+    font-size: 15px;
+}
+
+
+
+/*
+<!--<style type="text/css">
+		/*.back
+		{
+			background:rgba(255,255,255,0.5);
+			color: #0340FD;
+			padding-left:60px;
+			width: 35%;
+			margin-left: 440px;
+			padding-bottom: 5px;
+		}
+
+		input[type=text], select 
+		{
+		    padding: 12px 20px;
+		    margin: 8px 0;
+		    display: inline-block;
+		    border: 2px solid #96989D;
+		    border-radius: 6px;
+		    box-sizing: border-box;
+		    font-size: 15px;
+		}
+
+		input[type=Password], select 
+		{
+		    padding: 12px 20px;
+		    margin: 8px 0;
+		    display: inline-block;
+		    border: 2px solid #96989D;
+		    border-radius: 6px;
+		    box-sizing: border-box;
+		    font-size: 15px;
+		}
+		.button
+		{
+			padding: 12px 20px;
+		    margin: 8px 0;
+		    display: inline-block;
+		    border: 2px solid #96989D;
+		    border-radius: 6px;
+		    box-sizing: border-box;
+		    font-size: 15px;
+		}
+		.btn:hover
+		{
+			background-color: #737373;
+			color: #ffffff;
+			cursor: pointer;
+		}
+		.size
+		{
+			font-size: 20px;
+		}
+
+		hr 
+		{
+		    display: block;
+		    height: 1px;
+		    border: 0;
+		    border-top: 2px solid red;
+		    margin: 1em 0;
+		    padding: 0; 
+		}*/
